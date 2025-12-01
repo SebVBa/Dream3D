@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #F3EFEA;
+    color: #333;
+}
+
+.logo img {
+    width: 45px;
+    height: auto;
+}
+
+
+/* NAVBAR */
+.navbar {
+    background: #D79B4F;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    background: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.user-icon img {
+    width: 30px;
+}
+
+/* HERO */
+.hero {
+    margin-top: 15px;
+    background: white;
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 280px;  /* podés ajustarlo */
+    background-image: url("img/impresora3D.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 10px 10px 0 0;
+}
+
+
+.hero-content {
+    text-align: center;
+    padding: 20px 40px;
+}
+
+.hero-title {
+    background: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -25px;
+    display: inline-block;
+}
+
+.hero-slogan {
+    font-size: 28px;
+    margin-top: 20px;
+    background: #F3EFEA;
+    padding: 10px 30px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.hero-text {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* TESTIMONIOS */
+.testimonios {
+    width: 95%;
+    margin: 25px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testi-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.arrow {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.testi-card {
+    background: #EFEFEF;
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+}
+
+.testi-list {
+    margin-top: 20px;
+}
+
+.testi-item {
+    display: flex;
+    align-items: center;
+    background: #FFF8EF;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    gap: 15px;
+}
+
+.testi-item img {
+    width: 35px;
+}
+
+.stars {
+    margin-left: auto;
+    font-size: 18px;
+    color: gold;
+}
+
+/* FOOTER */
+.footer {
+    width: 95%;
+    background: white;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.footer-left,
+.footer-right {
+    width: 45%;
+}
+
+.footer-left p {
+    margin-top: 10px;
+}
