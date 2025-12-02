@@ -12,7 +12,57 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
+
+<link rel="stylesheet" href="css/navbar.css">
+
+    <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg" style="background:#eda657; width:100%;">
+  <div class="container-fluid">
+
+    <!-- LOGO -->
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.png" class="img-fluid rounded-4" style="height:75px;">
+
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <!-- DROPDOWN -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="catalogoDropdown" role="button">
+            Catálogo
+          </a>
+
+          <ul class="dropdown-menu text-center" aria-labelledby="catalogoDropdown">
+            <li><a class="dropdown-item" href="personalizado.html">Personalizado</a></li>
+            <li><a class="dropdown-item" href="catalogo.html">Catálogo</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contáctanos</a>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- ÍCONO USUARIO -->
+    <a class="nav-link" href="#">
+      <img src="img/usuario.png" class="img-fluid rounded-4" style="height:45px;">
+    </a>
+
+  </div>
+</nav>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <div class="container d-flex justify-content-center align-items-center min-vh-100">
     
     <form class="login-box p-4 rounded shadow" onsubmit="crearCuenta(event)">
