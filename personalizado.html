@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizado</title>
+    <link rel="stylesheet" href="css/personalizado.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Dream3D">
+        </div>
+
+        <nav class="nav-links">
+            <div class="dropdown">
+                <a class="drop-btn">Catálogo</a>
+                <div class="dropdown-content">
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="personalizado.html">Personalizado</a>
+                </div>
+            </div>
+
+            <a href="contacto.html">Contáctanos</a>
+        </nav>
+
+        <div class="user-icon">
+            <img src="img/usuario.png" alt="Usuario">
+        </div>
+    </header>
+
+    <!-- ÁREA DE TRABAJO -->
+    <div class="work-area">
+
+        <!-- ✓ BOTÓN ÚNICO DE CARGAR ARCHIVO -->
+        <label class="upload-btn">
+            Cargar archivo
+            <input type="file" id="fileInput" accept="image/*">
+        </label>
+
+        <!-- Cuadro blanco -->
+        <div class="image-container" id="imageContainer">
+            <img id="uploadedImage" class="draggable" style="display: none;">
+        </div>
+
+        <h3>Interactúa con él</h3>
+
+        <!-- Botón Confirmar Pedido -->
+        <a href="confirmar.html" class="confirm-btn">Confirmar Pedido</a>
+
+        <!-- Botón Contactarnos -->
+        <a href="contacto.html" class="contact-btn">Contactarnos</a>
+
+    </div>
+
+    <!-- ICONO AYUDA -->
+    <a href="ayuda.html" class="help-icon">❔</a>
+
+
+    <!-- SCRIPT mover imagen -->
+    <script>
+        const fileInput = document.getElementById("fileInput");
+        const image = document.getElementById("uploadedImage");
+
+        fileInput.addEventListener("change", function () {
+            const file = this.files[0];
+            if (file) {
+                image.src = URL.createObjectURL(file);
+                image.style.display = "block";
+            }
+        });
+
+        // Drag
+        let isDragging = false, offsetX, offsetY;
+
+        image.addEventListener("mousedown", (e) => {
+            isDragging = true;
+            offsetX = e.clientX - image.getBoundingClientRect().left;
+            offsetY = e.clientY - image.getBoundingClientRect().top;
+        });
+
+        window.addEventListener("mousemove", (e) => {
+            if (isDragging) {
+                image.style.left = `${e.clientX - offsetX}px`;
+                image.style.top = `${e.clientY - offsetY}px`;
+            }
+        });
+
+        window.addEventListener("mouseup", () => isDragging = false);
+    </script>
+
+</body>
+</html>
