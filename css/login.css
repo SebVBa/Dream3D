@@ -1,0 +1,100 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* FONDO GENERAL */
+body {
+    background: white;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* CONTENEDOR DEL LOGIN */
+.login-box {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 12px;
+    border: 2px solid blue;
+    position: relative;
+    padding-top: 50px; /* para que no choque con el icono atrás */
+}
+
+/* TÍTULO */
+.login-box h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+/* INPUTS */
+.input-group-text {
+    background: blue;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.form-control {
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: blue;
+}
+
+/* BOTÓN */
+.btn-crear {
+    background: blue;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn-crear:hover {
+    background: blue;
+    color: white;
+}
+
+/* ÍCONO ATRÁS */
+.back-arrow {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 23px;
+    color: #333;
+    text-decoration: none;
+}
+
+.back-arrow:hover {
+    color: #000;
+}
+
+/* ÍCONO AYUDA */
+.help-icon {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    font-size: 40px;
+    color: blue;
+    text-decoration: none;
+}
+
+.help-icon:hover {
+    color: blue;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+/* ÍCONO OJITO CONTRASEÑA */
+.toggle-pass {
+    cursor: pointer;
+    color: black;
+}
