@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Dream3D</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    
+    <form class="login-box p-4 rounded shadow" onsubmit="crearCuenta(event)">
+
+        <!-- FLECHA QUE AHORA REGRESA A index.html -->
+        <a href="index.html" class="back-arrow">
+            <i class="bi bi-arrow-left"></i>
+        </a>
+
+        <h2 class="text-center mb-4">Iniciar Sesión</h2>
+
+        <!-- Usuario -->
+        <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-person"></i></span>
+            <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Usuario" required>
+        </div>
+
+        <!-- Contraseña -->
+        <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-lock"></i></span>
+            <input type="password" id="pass" name="password" class="form-control" placeholder="Contraseña" required>
+            <span class="input-group-text"><i class="bi bi-eye-slash toggle-pass" id="togglePass"></i></span>
+        </div>
+
+        <!-- Correo -->
+        <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+            <input type="email" name="correo" id="correo" class="form-control" placeholder="Correo electrónico" required>
+        </div>
+
+        <button type="submit" class="btn btn-crear w-100">Crear cuenta</button>
+
+    </form>
+</div>
+
+<!-- Botón de ayuda -->
+<a href="ayuda.html" class="help-icon">
+    <i class="bi bi-question-circle"></i>
+</a>
+
+<!-- Script mostrar/ocultar contraseña -->
+<script>
+const pass = document.getElementById('pass');
+const toggle = document.getElementById('togglePass');
+
+toggle.addEventListener('click', () => {
+    if (pass.type === "password") {
+        pass.type = "text";
+        toggle.classList.replace("bi-eye-slash", "bi-eye");
+    } else {
+        pass.type = "password";
+        toggle.classList.replace("bi-eye", "bi-eye-slash");
+    }
+});
+
+function crearCuenta(e) {
+    e.preventDefault();
+
+    const user = document.getElementById("usuario").value;
+    const email = document.getElementById("correo").value;
+    const password = document.getElementById("pass").value;
+
+    if (!user || !email || !password) {
+        alert("Por favor complete todos los campos.");
+        return;
+    }
+
+    alert("Cuenta creada correctamente");
+    window.location.href = "index.html"; 
+}
+</script>
+
+</body>
+</html>
