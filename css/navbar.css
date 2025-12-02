@@ -1,0 +1,24 @@
+/* NAVBAR */
+
+/* Mostrar dropdown con hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+/* Estilo opcional para que se vea más bonito */
+.navbar .nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+
+.dropdown-menu {
+    border-radius: 12px;
+    border: 2px solid #000;
+}
+
+.dropdown-item:hover {
+    background-color: #ffe5c4;
+}

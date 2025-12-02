@@ -6,31 +6,7 @@ body {
     background: #f7f7f7;
 }
 
-/* NAVBAR */
-.navbar {
-    background: #111;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-}
 
-.navbar img {
-    height: 45px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 25px;
-    align-items: center;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-}
 
 /* DROP MENU */
 .dropdown {
