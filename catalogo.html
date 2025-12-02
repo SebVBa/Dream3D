@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Dream3D</title>
+    <link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Dream3D">
+        </div>
+
+        <nav class="nav-links">
+
+            <!-- MENÚ DESPLEGABLE -->
+            <div class="dropdown">
+                <a class="drop-btn">Catálogo</a>
+
+                <div class="dropdown-content">
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="personalizado.html">Personalizado</a>
+                </div>
+            </div>
+
+            <a href="#">Contáctanos</a>
+        </nav>
+
+        <div class="user-icon">
+            <img src="img/usuario.png" alt="Usuario">
+        </div>
+    </header>
+
+<div class="regresar-container">
+    <a href="index.html" class="btn-regresar">
+        <span class="flecha">←</span> Regresar
+    </a>
+</div>
+
+<!-- TITULO -->
+<section class="header-section">
+    <h1>Catálogo Dream3D</h1>
+    <p>Selecciona una categoría y elige un modelo para hacer tu pedido.</p>
+</section>
+
+<!-- FILTRO -->
+<section class="filtros">
+    <label for="categoria">Filtrar por categoría:</label>
+    <select id="categoria">
+        <option value="todos">Todos</option>
+        <option value="souvenirs">Souvenirs</option>
+        <option value="llaveros">Llaveros</option>
+        <option value="anime">Anime</option>
+        <option value="animales">Animales</option>
+        <option value="videojuegos">Videojuegos</option>
+        <option value="otros">Otros</option>
+    </select>
+</section>
+
+<!-- CONTENEDOR -->
+<section class="catalogo-contenedor">
+
+    <!-- SOUVENIRS -->
+    <div class="categoria-block souvenirs">
+        <h2>Souvenirs</h2>
+        <p>Pequeñas figuras decorativas ideales para regalo o colección.</p>
+
+        <div class="galeria">
+            <div class="item">
+                <img src="img/souvenir1.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/souvenir2.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/souvenir3.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/souvenir4.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+        </div>
+    </div>
+
+    <!-- LLAVEROS -->
+    <div class="categoria-block llaveros">
+        <h2>Llaveros</h2>
+        <p>Llaveros personalizados con nombres o personajes.</p>
+
+        <div class="galeria">
+            <div class="item">
+                <img src="img/oso.jpg">
+                <p class="descripcion">Llavero de un oso</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/carro.jpg">
+                <p class="descripcion">Llavero de un carro</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/control.jpg">
+                <p class="descripcion">Llavero de un control</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/Dona.jpg">
+                <p class="descripcion">Llavero de una dona</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+        </div>
+    </div>
+
+    <!-- ANIME -->
+    <div class="categoria-block anime">
+        <h2>Anime</h2>
+        <p>Modelos inspirados en tus personajes favoritos.</p>
+
+        <div class="galeria">
+            <div class="item">
+                <img src="img/anime1.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/anime2.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/anime3.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/anime4.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+        </div>
+    </div>
+
+    <!-- ANIMALES -->
+    <div class="categoria-block animales">
+        <h2>Animales</h2>
+        <p>Mini figuras de animales impresas en 3D.</p>
+
+        <div class="galeria">
+            <div class="item">
+                <img src="img/animal1.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/animal2.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/animal3.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/animal4.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIDEOJUEGOS -->
+    <div class="categoria-block videojuegos">
+        <h2>Videojuegos</h2>
+        <p>Figuras basadas en personajes de videojuegos.</p>
+
+        <div class="galeria">
+            <div class="item">
+                <img src="img/game1.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/game2.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/game3.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+
+            <div class="item">
+                <img src="img/game4.png">
+                <p class="descripcion">Descripción del modelo.</p>
+                <label class="check-only"><input type="checkbox" class="seleccionar"></label>
+            </div>
+        </div>
+    </div>
+
+    <!-- OTROS -->
+    <div class="categoria-block otros">
+        <h2>Otros</h2>
+        <p>Escribe lo que deseas que fabriquemos para ti:</p>
+
+        <textarea class="otros-textarea" placeholder="Describe tu idea aquí..."></textarea>
+    </div>
+
+</section>
+
+<!-- CONFIRMAR -->
+<div class="btn-center">
+    <button class="btn-confirmar" onclick="procesarPedido()">Confirmar pedido</button>
+</div>
+
+<script>
+// FILTRO DE CATEGORIAS
+document.getElementById("categoria").addEventListener("change", function () {
+    let categoria = this.value;
+    let bloques = document.querySelectorAll(".categoria-block");
+
+    bloques.forEach(bloque => {
+        if (categoria === "todos") {
+            bloque.style.display = "block";
+        } else if (bloque.classList.contains(categoria)) {
+            bloque.style.display = "block";
+        } else {
+            bloque.style.display = "none";
+        }
+    });
+});
+
+// CONFIRMAR
+function procesarPedido() {
+    let seleccionados = document.querySelectorAll(".seleccionar:checked");
+    let textoOtros = document.querySelector(".otros-textarea").value.trim();
+
+    if (seleccionados.length === 0 && textoOtros === "") {
+        alert("Selecciona al menos un modelo o escribe tu idea en 'Otros'.");
+        return;
+    }
+
+    alert("Pedido enviado correctamente.");
+}
+</script>
+
+</body>
+</html>
