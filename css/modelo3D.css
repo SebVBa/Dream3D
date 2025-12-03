@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+}
+
+header {
+    background: #2d2d2d;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Nuevo: Main ahora ocupa toda la pantalla y no centra el contenido */
+main {
+    padding: 20px;
+}
+
+/* Contenedor del visor 3D */
+.viewer-container {
+    flex: 1;
+    min-width: 350px;
+    max-width: 600px;
+}
+
+model-viewer {
+    width: 100%;
+    height: 450px; /* Más grande para que se vea mejor */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Información del objeto */
+.info {
+    flex: 1;
+    min-width: 350px;
+    max-width: 500px;
+    text-align: left;   /* Antes estaba en centro → se arregla */
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Botones */
+.btn {
+    padding: 10px 20px;
+    background: #503CEB;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #3225A3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
