@@ -1,10 +1,20 @@
 
 
+ body {
+      background: #F4F6F9;
+      font-family: Arial, sans-serif;
+    }
+
+
+.btn-white:hover {
+    background-color: #f2f2f2;
+}
+
 /* ============================ */
 /* CAJA CENTRAL DEL PAGO */
 /* ============================ */
 .payment-box {
-    background-color: #f0dcc2; /* Color beige */
+    background-color: #FFFFFF; /* Color beige */
     max-width: 500px;
     border-radius: 15px;
     padding: 40px 30px;
@@ -33,7 +43,7 @@
 .icon-circle {
     width: 70px;
     height: 70px;
-    background: #fff;
+    background: #0D47A1 ;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -92,24 +102,3 @@
     font-weight: 500;
     margin-top: 5px;
 }
-
-/* ========================
-   ÍCONO DE AYUDA
-======================== */
-.help-icon {
-    position: fixed;
-    bottom: 15px;
-    left: 15px;
-    background: black;
-    color: white;
-    font-size: 22px;
-    padding: 10px 14px;
-    border-radius: 50%;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.help-icon:hover {
-    background: #333;
-}
-
