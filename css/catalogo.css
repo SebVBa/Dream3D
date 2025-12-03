@@ -150,3 +150,24 @@ body {
         height: 180px;
     }
 }
+
+/* ========================
+   ÍCONO DE AYUDA
+======================== */
+.help-icon {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    background: black;
+    color: white;
+    font-size: 22px;
+    padding: 10px 14px;
+    border-radius: 50%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.help-icon:hover {
+    background: #333;
+}
+
