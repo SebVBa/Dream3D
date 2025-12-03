@@ -1,25 +1,4 @@
-/* ============================ */
-/* COLOR PRINCIPAL Y TOPBAR */
-/* ============================ */
-.topbar {
-    background-color: #e8a357; /* Naranja principal */
-}
 
-/* ============================ */
-/* BOTONES BLANCOS EN NAVBAR */
-/* ============================ */
-.btn-white {
-    background-color: #fff;
-    border-radius: 50px;
-    color: #333;
-    font-weight: 600;
-    border: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn-white:hover {
-    background-color: #f2f2f2;
-}
 
 /* ============================ */
 /* CAJA CENTRAL DEL PAGO */
