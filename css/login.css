@@ -8,49 +8,49 @@
 
 /* FONDO GENERAL */
 body {
-    background: white;
-    color: #333;
+    background: #F4F6F9;
+    color: #1F1F1F;
     min-height: 100vh;
 }
 
 /* CONTENEDOR DEL LOGIN */
 .login-box {
-    background: white;
+    background: #FFFFFF;
     width: 100%;
     max-width: 420px;
     border-radius: 12px;
-    border: 2px solid blue;
+    border: 2px solid #1A73E8;
     position: relative;
-    padding-top: 50px; /* para que no choque con el icono atrás */
+    padding-top: 50px;
 }
 
 /* TÍTULO */
 .login-box h2 {
     font-weight: bold;
-    color: #333;
+    color: #0D47A1;
 }
 
 /* INPUTS */
 .input-group-text {
-    background: blue;
-    color: white;
+    background: #1A73E8;
+    color: #FFFFFF;
     font-size: 1.2rem;
     border: none;
 }
 
 .form-control {
-    border: 2px solid blue;
+    border: 2px solid #1A73E8;
     padding: 10px;
 }
 
 .form-control:focus {
-    border-color: blue;
+    border-color: #1A73E8;
 }
 
 /* BOTÓN */
 .btn-crear {
-    background: blue;
-    color: white;
+    background: #5CA8FF;
+    color: #FFFFFF;
     font-weight: bold;
     padding: 12px;
     border-radius: 8px;
@@ -59,8 +59,8 @@ body {
 }
 
 .btn-crear:hover {
-    background: blue;
-    color: white;
+    background: #1A73E8;
+    color: #FFFFFF;
 }
 
 /* ÍCONO ATRÁS */
@@ -69,17 +69,15 @@ body {
     top: 15px;
     left: 15px;
     font-size: 23px;
-    color: #333;
+    color: #1F1F1F;
     text-decoration: none;
 }
 
 .back-arrow:hover {
-    color: #000;
+    color: #0D47A1;
 }
 
-/* ========================
-   ÍCONO DE AYUDA
-======================== */
+/* ÍCONO DE AYUDA */
 .help-icon {
     position: fixed;
     bottom: 15px;
@@ -97,9 +95,8 @@ body {
     background: #333;
 }
 
-
 /* ÍCONO OJITO CONTRASEÑA */
 .toggle-pass {
     cursor: pointer;
-    color: black;
+    color: #1F1F1F;
 }

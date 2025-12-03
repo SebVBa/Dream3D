@@ -1,32 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
-    background: #F3EFEA; /* o el color que realmente querés */
-    color: #333;
+    background: #F4F6F9; 
+    color: #1F1F1F;
 }
-
 
 .logo img {
     width: 45px;
     height: auto;
 }
 
-
-
-
 /* HERO */
 .hero {
     position: relative;
     margin-top: 15px;
-    background: white;
+    background: #FFFFFF;
     width: 95%;
     margin: 20px auto;
     border-radius: 10px;
@@ -35,15 +22,13 @@ body {
 
 .hero-img {
     width: 100%;
-    height: 500px;  /* podés ajustarlo */
+    height: 500px;
     background-image: url(../img/impresora3D.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     border-radius: 10px 10px 0 0;
 }
-
 
 .hero-content {
     text-align: center;
@@ -52,7 +37,7 @@ body {
 
 .hero-title {
     position: absolute;
-    background: white;
+    background: #FFFFFF;
     top: 250px;
     left: 30px;
     padding: 10px 25px;
@@ -61,34 +46,36 @@ body {
     font-weight: bold;
     margin-top: -25px;
     display: inline-block;
+    color: #0D47A1;
 }
 
 .hero-slogan {
     font-size: 28px;
     margin-top: 20px;
-    background: #F3EFEA;
+    background: #F4F6F9;
     padding: 10px 30px;
     border-radius: 20px;
     display: inline-block;
+    color: #1F1F1F;
 }
 
 .hero-text {
     margin-top: 20px;
     font-size: 25px;
     line-height: 1.6;
+    color: #1F1F1F;
 }
 
-/* CARUSEL */
-
+/* CAROUSEL */
 .card-img-top {
-    height: 250px;       /* controla el tamaño sin perder calidad */
-    object-fit: cover;   /* mantiene aspecto sin deformar */
+    height: 250px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    filter: invert(54%) sepia(21%) saturate(824%) hue-rotate(330deg) brightness(95%) contrast(90%);
+    filter: invert(40%) sepia(60%) saturate(2000%) hue-rotate(200deg);
 }
 
 .carousel-control-prev, 
@@ -97,7 +84,6 @@ body {
     height: 250px;
 }
 
-/* Suaviza la transición entre slides */
 .carousel-item {
     transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out !important;
     opacity: 0;
@@ -107,29 +93,28 @@ body {
     opacity: 1;
 }
 
-/* Cuando entra el siguiente slide */
 .carousel-item-next.carousel-item-start,
 .carousel-item-prev.carousel-item-end {
     opacity: 1;
 }
 
-/* Cuando sale el slide actual */
 .carousel-item-start,
 .carousel-item-end {
     opacity: 0;
 }
+
 /* Etiqueta del descuento */
 .discount-tag {
     position: absolute;
     top: 10px;
     left: 10px;
-    background: #ff5722;
-    color: white;
+    background: #1A73E8;
+    color: #FFFFFF;
     padding: 8px 12px;
     border-radius: 10px;
     font-weight: bold;
     font-size: 1rem;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25);
 }
 
 /* Texto del producto */
@@ -138,7 +123,7 @@ body {
     bottom: 10px;
     left: 10px;
     background: rgba(0,0,0,0.55);
-    color: #fff;
+    color: #FFFFFF;
     padding: 8px 14px;
     border-radius: 8px;
     font-size: 0.9rem;
@@ -147,7 +132,7 @@ body {
 /* TESTIMONIOS */
 .testimonios {
     padding: 40px 0;
-    background: #f5f5f5;
+    background: #FFFFFF;
 }
 
 .titulo-testimonios {
@@ -155,11 +140,12 @@ body {
     font-size: 2rem;
     margin-bottom: 25px;
     font-weight: 700;
+    color: #0D47A1;
 }
 
 .testi-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 90%;
     max-width: 900px;
@@ -167,13 +153,13 @@ body {
 }
 
 .testi-item {
-    background: white;
+    background: #FFFFFF;
     padding: 15px;
     border-radius: 10px;
     display: flex;
     gap: 15px;
     align-items: center;
-    border: 1px solid #e5e5e5;
+    border: 1px solid #E5E7EB;
     transition: transform .2s ease;
 }
 
@@ -196,24 +182,25 @@ body {
 .testi-item p {
     margin: 3px 0 0;
     font-size: .9rem;
-    color: #555;
+    color: #6B7280;
 }
 
 .stars {
     margin-left: auto;
-    color: gold;
+    color: #FFC107;
     font-size: 1.1rem;
 }
 
 /* FOOTER */
 .footer {
     width: 95%;
-    background: #d79b4f;
+    background: #1A73E8;
     margin: 30px auto;
     display: flex;
     justify-content: space-between;
     padding: 30px 20px;
     border-radius: 10px;
+    color: #FFFFFF;
 }
 
 .footer-left,
@@ -225,8 +212,6 @@ body {
     margin-top: 10px;
 }
 
-
-
 .logo {
     margin: 0 auto;
     font-size: 22px;
@@ -234,7 +219,7 @@ body {
 }
 
 .back {
-    color: black;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -248,12 +233,12 @@ body {
     display: block;
     width: 250px;
     margin: 20px auto;
-    background: white;
+    background: #FFFFFF;
     border-radius: 12px;
     text-decoration: none;
-    color: black;
+    color: #1F1F1F;
     font-size: 20px;
-    border: 2px solid black;
+    border: 2px solid #1A73E8;
 }
 
 .revista {
@@ -263,14 +248,14 @@ body {
 }
 
 .pagina {
-    background: #fff7e8;
+    background: #FFFFFF;
     padding: 20px;
     font-size: 18px;
-    border: 1px solid black;
+    border: 1px solid #E5E7EB;
 }
 
 .portada {
-    background: #ffd49e;
+    background: #5CA8FF;
     text-align: center;
 }
 
@@ -279,55 +264,50 @@ body {
     display: block;
     margin: 10px auto;
 }
-/* 🔽 CONTENEDOR DEL DROPDOWN */
+
+/* DROPDOWN */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* 🔽 BOTÓN DEL MENÚ */
 .drop-btn {
     cursor: pointer;
     padding: 10px 15px;
     display: inline-block;
+    color: #1F1F1F;
 }
 
-/* 🔽 CONTENIDO DEL MENÚ DESPLEGABLE (OCULTO AL INICIO) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background: white;
+    background: #FFFFFF;
     min-width: 150px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     z-index: 1000;
     border-radius: 5px;
 }
 
-/* 🔽 LOS LINKS DE ADENTRO */
 .dropdown-content a {
     display: block;
     padding: 10px;
-    color: black;
+    color: #1F1F1F;
     text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    background: #ddd;
+    background: #F4F6F9;
 }
 
-/* 🔽 MOSTRAR EL MENÚ CUANDO SE HACE HOVER */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* 🔽 EVITAR QUE EL MENÚ SE CIERRE SI PASAS EL MOUSE ENTRE OPCIONES */
 .dropdown:hover .drop-btn {
-    background: #eee;
+    background: #E5E7EB;
 }
 
-/* ========================
-   ÍCONO DE AYUDA
-======================== */
+/* ICONO AYUDA */
 .help-icon {
     position: fixed;
     bottom: 15px;
@@ -342,5 +322,5 @@ body {
 }
 
 .help-icon:hover {
-    background: #333;
+    background: gray;
 }

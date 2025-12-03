@@ -1,29 +1,26 @@
+/* TOPBAR (dejada en azul) */
 .topbar {
-    background-color: #c58a4a; /* marrón anaranjado */
+    background-color: #1A73E8;
 }
 
 /* Navbar links estilo botón */
 .navbar-nav .nav-link {
-    background-color: #fff; /* blanco */
-    color: blue; /* negro */
+    background-color: #FFFFFF;
+    color: #0D47A1;
     border-radius: 30px;
-    padding: 6px 20px;
-    margin: 0 10px;
     font-weight: 600;
-    transition: background-color 0.3s ease;
 }
 
 /* Hover navbar links */
 .navbar-nav .nav-link:hover {
-    background-color: #b27a3f; /* un poco más oscuro */
-    color: #fff;
+    background-color: #5CA8FF;
+    color: #FFFFFF;
 }
 
 /* Icono usuario */
 .nav-link > img {
-    background-color: #fff;
+    background-color: #FFFFFF;
     border-radius: 50%;
-    padding: 5px;
     height: 45px;
     width: 45px;
 }
@@ -31,19 +28,19 @@
 /* Contenido */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f6f0;
+    background-color: #F4F6F9;
 }
 
 h1 {
     font-size: 3rem;
-    color: #e8a357;
+    color: #1A73E8;
     font-weight: bold;
 }
 
 /* Acordeón */
 .accordion-button {
-    background-color: #f0dcc2;
-    color: #333;
+    background-color: #F4F6F9;
+    color: #1F1F1F;
     font-weight: 600;
 }
 
@@ -52,8 +49,8 @@ h1 {
 }
 
 .accordion-body {
-    background-color: #fff;
-    color: #333;
+    background-color: #FFFFFF;
+    color: #1F1F1F;
 }
 
 ul {
@@ -66,19 +63,19 @@ ul li {
 
 /* Botón de la Sección Educativa */
 .btn-educativa {
-    background-color: blue; /* Verde */
-    color: #ffffff;            /* Texto blanco */
-    border: none;              /* Sin borde */
-    padding: 12px 25px;        /* Espaciado interno */
-    font-size: 18px;            /* Tamaño del texto */
-    border-radius: 8px;         /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición al pasar el mouse */
+    background-color: #0D47A1;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
 .btn-educativa:hover {
-    background-color: blue; /* Verde más oscuro al pasar el mouse */
-    color: #ffffff;             /* Mantener el texto blanco */
-    text-decoration: none;      /* Quitar subrayado si es un enlace */
+    background-color: #1A73E8;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* 🔽 BOTÓN DEL MENÚ */
@@ -86,37 +83,38 @@ ul li {
     cursor: pointer;
     padding: 10px 15px;
     display: inline-block;
+    color: #1F1F1F;
 }
 
-/* 🔽 CONTENIDO DEL MENÚ DESPLEGABLE (OCULTO AL INICIO) */
+/* 🔽 CONTENIDO DEL MENÚ DESPLEGABLE */
 .dropdown-content {
     display: none;
     position: absolute;
-    background: white;
+    background: #FFFFFF;
     min-width: 150px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     z-index: 1000;
     border-radius: 5px;
 }
 
-/* 🔽 LOS LINKS DE ADENTRO */
+/* 🔽 LINKS DEL MENÚ */
 .dropdown-content a {
     display: block;
     padding: 10px;
-    color: black;
+    color: #1F1F1F;
     text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    background: #ddd;
+    background: #F4F6F9;
 }
 
-/* 🔽 MOSTRAR EL MENÚ CUANDO SE HACE HOVER */
+/* 🔽 MOSTRAR EL MENÚ */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* 🔽 EVITAR QUE EL MENÚ SE CIERRE SI PASAS EL MOUSE ENTRE OPCIONES */
+/* 🔽 EVITAR CIERRE */
 .dropdown:hover .drop-btn {
-    background: #eee;
+    background: #E5E7EB;
 }

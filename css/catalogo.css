@@ -1,21 +1,11 @@
-/* RESET Y BASE */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    background: #F3EFEA;
-    color: #333;
-    margin: 0;
-    padding: 0;
+    background: #F4F6F9; 
+    color: #1F1F1F; 
 }
 
 /* NAVBAR */
 .navbar {
-    background: #eda657;
+    background: #1A73E8; 
 }
 
 .navbar-brand img {
@@ -32,13 +22,14 @@ body {
 .filtros label {
     font-weight: bold;
     margin-right: 10px;
+    color: #1F1F1F; 
 }
 
 /* CATEGORIAS */
 .categoria-block {
     margin: 40px auto;
     width: 95%;
-    background: #fff;
+    background: #FFFFFF; 
     border-radius: 15px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -47,12 +38,13 @@ body {
 .categoria-block h2 {
     text-align: center;
     margin-bottom: 10px;
+    color: #0D47A1; 
 }
 
 .categoria-block p {
     text-align: center;
     margin-bottom: 20px;
-    color: #555;
+    color: #6B7280; 
 }
 
 /* CAROUSEL */
@@ -83,14 +75,14 @@ body {
 /* UNIFICAR MEDIDAS DE IMAGENES */
 .item img {
     width: 100%;
-    height: 250px;   /* todas las imágenes del catálogo tendrán esta altura */
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
 }
 
 /* ITEM */
 .item {
-    background: white;
+    background: #FFFFFF;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
@@ -100,6 +92,7 @@ body {
 .item .descripcion {
     margin-top: 8px;
     font-weight: 500;
+    color: #6B7280; 
 }
 
 /* CHECKBOX */
@@ -115,7 +108,9 @@ body {
     padding: 10px;
     font-size: 16px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #6B7280;
+    background: #FFFFFF; 
+    color: #1F1F1F; 
 }
 
 /* BOTON CONFIRMAR */
@@ -125,8 +120,8 @@ body {
 }
 
 .btn-confirmar {
-    background: #111;
-    color: white;
+    background: #5CA8FF; 
+    color: #FFFFFF; 
     padding: 12px 30px;
     border-radius: 8px;
     border: none;
@@ -136,7 +131,7 @@ body {
 }
 
 .btn-confirmar:hover {
-    background: #222;
+    background: #1A73E8; 
 }
 
 /* RESPONSIVE */
@@ -151,9 +146,6 @@ body {
     }
 }
 
-/* ========================
-   ÍCONO DE AYUDA
-======================== */
 .help-icon {
     position: fixed;
     bottom: 15px;
@@ -170,4 +162,3 @@ body {
 .help-icon:hover {
     background: #333;
 }
-
