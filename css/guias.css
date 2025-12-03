@@ -80,3 +80,43 @@ ul li {
     color: #ffffff;             /* Mantener el texto blanco */
     text-decoration: none;      /* Quitar subrayado si es un enlace */
 }
+
+/* 🔽 BOTÓN DEL MENÚ */
+.drop-btn {
+    cursor: pointer;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+/* 🔽 CONTENIDO DEL MENÚ DESPLEGABLE (OCULTO AL INICIO) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+/* 🔽 LOS LINKS DE ADENTRO */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background: #ddd;
+}
+
+/* 🔽 MOSTRAR EL MENÚ CUANDO SE HACE HOVER */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 🔽 EVITAR QUE EL MENÚ SE CIERRE SI PASAS EL MOUSE ENTRE OPCIONES */
+.dropdown:hover .drop-btn {
+    background: #eee;
+}
