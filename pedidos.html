@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mis pedidos</title>
 </head>
 <body>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,6 +11,7 @@
 
 
 <link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/pedidos.css">
 
     <!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg" style="background:#eda657; width:100%;">
@@ -49,13 +50,318 @@
     </div>
 
     <!-- ÍCONO USUARIO -->
-    <a class="nav-link" href="#">
-      <img src="img/usuario.png" class="img-fluid rounded-4" style="height:45px;">
-    </a>
+        <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
+    <img src="img/usuario.png" class="img-fluid rounded-4" style="height:45px;">
+  </a>
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+    <li><a class="dropdown-item" href="pedidos.html">Pedidos</a></li>
+  </ul>
+</li>
 
   </div>
 </nav>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="container py-4">
+    <h2 class="mb-4">Mis pedidos</h2>
+
+    <!-- ================= LISTA DE PEDIDOS CON ACCORDION ================= -->
+    <div class="accordion" id="listaPedidos">
+
+        <!-- ------------------ PEDIDO 1 ------------------- -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button pedido-item" type="button" data-bs-toggle="collapse" data-bs-target="#pedido1">
+                    <strong>P1</strong> &nbsp; Pedido 1 → Finalizado
+                </button>
+            </h2>
+
+            <div id="pedido1" class="accordion-collapse collapse">
+                <div class="accordion-body">
+
+                    <!-- TIMELINE PARA PEDIDO FINALIZADO -->
+                    <div class="timeline">
+                        <div class="timeline-step completed">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Emitido</p>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step completed">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Pagado</p>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step completed">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Procesado</p>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step completed">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Finalizado</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- FORMULARIO DE COMENTARIOS Y ESTRELLAS -->
+                    <h5>Agregar comentario</h5>
+                    <textarea class="form-control" rows="3" placeholder="Escribe tu opinión sobre este pedido..."></textarea>
+
+                    <h5 class="mt-3">Calificación</h5>
+                    <div class="star-rating">
+                        <input type="radio" id="5stars1" name="rating1"><label for="5stars1">★</label>
+                        <input type="radio" id="4stars1" name="rating1"><label for="4stars1">★</label>
+                        <input type="radio" id="3stars1" name="rating1"><label for="3stars1">★</label>
+                        <input type="radio" id="2stars1" name="rating1"><label for="2stars1">★</label>
+                        <input type="radio" id="1star1" name="rating1"><label for="1star1">★</label>
+                    </div>
+
+                    <br><br>
+                    <button class="btn btn-primary">Enviar comentario</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------ PEDIDO 2 ------------------- -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button pedido-item" type="button" data-bs-toggle="collapse" data-bs-target="#pedido2">
+                    <strong>P2</strong> &nbsp; Pedido 2 → En proceso
+                </button>
+            </h2>
+
+            <div id="pedido2" class="accordion-collapse collapse">
+                <div class="accordion-body">
+
+                    <!-- TIMELINE EN PROCESO -->
+                    <div class="timeline">
+                        <div class="timeline-step completed">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Emitido</p>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step completed">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Pagado</p>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step active">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Procesándose</p>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Finalizado</p>
+                        </div>
+                    </div>
+
+                    <p class="mt-3 text-muted">Este pedido aún no está finalizado, por lo que no se puede comentar.</p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------ PEDIDO 3 (CANCELADO) ------------------- -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button pedido-item" type="button" data-bs-toggle="collapse" data-bs-target="#pedido3">
+                    <strong>P3</strong> &nbsp; Pedido 3 → Cancelado
+                </button>
+            </h2>
+
+            <div id="pedido3" class="accordion-collapse collapse">
+                <div class="accordion-body">
+
+                    <!-- TIMELINE CANCELADO -->
+                    <div class="timeline">
+                        <div class="timeline-step completed">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Emitido</p>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step active">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Cancelado</p>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step">
+                            <span class="circle"></span>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step">
+                            <span class="circle"></span>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Comentario para pedido cancelado -->
+                    <h5>Agregar comentario</h5>
+                    <textarea class="form-control" rows="3" placeholder="¿Qué ocurrió con tu pedido?"></textarea>
+
+                    <h5 class="mt-3">Calificación</h5>
+                    <div class="star-rating">
+                        <input type="radio" id="5stars3" name="rating3"><label for="5stars3">★</label>
+                        <input type="radio" id="4stars3" name="rating3"><label for="4stars3">★</label>
+                        <input type="radio" id="3stars3" name="rating3"><label for="3stars3">★</label>
+                        <input type="radio" id="2stars3" name="rating3"><label for="2stars3">★</label>
+                        <input type="radio" id="1star3" name="rating3"><label for="1star3">★</label>
+                    </div>
+
+                    <br><br>
+                    <button class="btn btn-primary">Enviar comentario</button>
+
+                </div>
+            </div>
+        </div>
+            <!-- ------------------ PEDIDO 4 (IMPRIMIÉNDOSE) ------------------- -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button pedido-item" type="button" data-bs-toggle="collapse" data-bs-target="#pedido4">
+                    <strong>P4</strong> &nbsp; Pedido 4 → Finalizado
+                </button>
+            </h2>
+
+            <div id="pedido4" class="accordion-collapse collapse">
+                <div class="accordion-body">
+
+                    <!-- TIMELINE EN PROCESO (IMPRIMIÉNDOSE) -->
+                    <div class="timeline">
+                        <div class="timeline-step completed">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Emitido</p>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step completed">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Pagado</p>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step completed">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Procesado</p>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step active">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Finalizado</p>
+                        </div>
+                    </div>
+
+                    <!-- Comentario + estrellas -->
+                    <h5>Agregar comentario</h5>
+                    <textarea class="form-control" rows="3" placeholder="Cuéntanos por qué cancelaste tu pedido o qué ocurrió."></textarea>
+
+                    <h5 class="mt-3">Calificación</h5>
+                    <div class="star-rating">
+                        <input type="radio" id="5stars5" name="rating5"><label for="5stars5">★</label>
+                        <input type="radio" id="4stars5" name="rating5"><label for="4stars5">★</label>
+                        <input type="radio" id="3stars5" name="rating5"><label for="3stars5">★</label>
+                        <input type="radio" id="2stars5" name="rating5"><label for="2stars5">★</label>
+                        <input type="radio" id="1star5" name="rating5"><label for="1star5">★</label>
+                    </div>
+
+                    <br><br>
+                    <button class="btn btn-primary">Enviar comentario</button>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------ PEDIDO 5 (CANCELADO) ------------------- -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button pedido-item" type="button" data-bs-toggle="collapse" data-bs-target="#pedido5">
+                    <strong>P5</strong> &nbsp; Pedido 5 → Cancelado
+                </button>
+            </h2>
+
+            <div id="pedido5" class="accordion-collapse collapse">
+                <div class="accordion-body">
+
+                    <!-- TIMELINE CANCELADO -->
+                    <div class="timeline">
+                        <div class="timeline-step completed">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Emitido</p>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step active">
+                            <span class="circle"></span>
+                            <p class="fw-bold">Cancelado</p>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step">
+                            <span class="circle"></span>
+                        </div>
+
+                        <div class="timeline-line"></div>
+
+                        <div class="timeline-step">
+                            <span class="circle"></span>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Comentario + estrellas -->
+                    <h5>Agregar comentario</h5>
+                    <textarea class="form-control" rows="3" placeholder="Cuéntanos por qué cancelaste tu pedido o qué ocurrió."></textarea>
+
+                    <h5 class="mt-3">Calificación</h5>
+                    <div class="star-rating">
+                        <input type="radio" id="5stars5" name="rating5"><label for="5stars5">★</label>
+                        <input type="radio" id="4stars5" name="rating5"><label for="4stars5">★</label>
+                        <input type="radio" id="3stars5" name="rating5"><label for="3stars5">★</label>
+                        <input type="radio" id="2stars5" name="rating5"><label for="2stars5">★</label>
+                        <input type="radio" id="1star5" name="rating5"><label for="1star5">★</label>
+                    </div>
+
+                    <br><br>
+                    <button class="btn btn-primary">Enviar comentario</button>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+</div>
 </body>
 </html>
