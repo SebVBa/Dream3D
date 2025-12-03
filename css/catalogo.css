@@ -1,122 +1,124 @@
-/* GENERAL */
-body {
-    font-family: Arial, sans-serif;
+/* RESET Y BASE */
+* {
     margin: 0;
     padding: 0;
-    background: #f7f7f7;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-
-
-/* DROP MENU */
-.dropdown {
-    position: relative;
+body {
+    background: #F3EFEA;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-.drop-btn {
-    cursor: pointer;
+/* NAVBAR */
+.navbar {
+    background: #eda657;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background: #222;
-    top: 25px;
-    padding: 10px;
-    border-radius: 8px;
-    flex-direction: column;
+.navbar-brand img {
+    width: 75px;
+    height: auto;
 }
 
-.dropdown:hover .dropdown-content {
-    display: flex;
-}
-
-.dropdown-content a {
-    padding: 8px;
-    color: white;
-    display: block;
-}
-
-/* REGRESAR */
-.regresar-container {
-    padding: 20px;
-}
-
-.btn-regresar {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
-
-/* TITULO */
-.header-section {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.header-section h1 {
-    margin-bottom: 5px;
-}
-
-/* FILTROS */
+/* FILTRO */
 .filtros {
     text-align: center;
-    margin: 25px 0;
+    margin: 20px 0;
 }
 
-select {
-    padding: 8px;
-    font-size: 16px;
+.filtros label {
+    font-weight: bold;
+    margin-right: 10px;
 }
 
-/* BLOQUES */
-.catalogo-contenedor {
-    padding: 20px 40px;
-}
-
+/* CATEGORIAS */
 .categoria-block {
-    margin-bottom: 40px;
+    margin: 40px auto;
+    width: 95%;
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .categoria-block h2 {
-    margin-bottom: 5px;
-}
-
-.galeria {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 15px;
-}
-
-.item {
-    background: white;
-    padding: 15px;
-    border-radius: 10px;
-    width: 180px;
     text-align: center;
-    box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
 }
 
+.categoria-block p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* CAROUSEL */
+.carousel-item {
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out !important;
+    opacity: 0;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-item-next.carousel-item-start,
+.carousel-item-prev.carousel-item-end {
+    opacity: 1;
+}
+
+.carousel-item-start,
+.carousel-item-end {
+    opacity: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(54%) sepia(21%) saturate(824%) hue-rotate(330deg) brightness(95%) contrast(90%);
+}
+
+/* UNIFICAR MEDIDAS DE IMAGENES */
 .item img {
     width: 100%;
-    border-radius: 8px;
+    height: 250px;   /* todas las imágenes del catálogo tendrán esta altura */
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.descripcion {
+/* ITEM */
+.item {
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.item .descripcion {
     margin-top: 8px;
+    font-weight: 500;
+}
+
+/* CHECKBOX */
+.seleccionar {
+    margin-top: 10px;
 }
 
 /* OTROS */
 .otros-textarea {
     width: 100%;
     height: 120px;
-    padding: 10px;
     resize: none;
-    font-size: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
 
-/* BOTÓN CONFIRMAR */
+/* BOTON CONFIRMAR */
 .btn-center {
     text-align: center;
     margin: 30px 0;
@@ -126,12 +128,25 @@ select {
     background: #111;
     color: white;
     padding: 12px 30px;
-    border: none;
-    font-size: 18px;
     border-radius: 8px;
+    border: none;
     cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
 .btn-confirmar:hover {
     background: #222;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 50px;
+    }
+
+    .item img {
+        height: 180px;
+    }
 }
