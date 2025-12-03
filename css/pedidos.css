@@ -1,0 +1,92 @@
+     body {
+      background: #f4efe7;
+      padding: 30px;
+      font-family: Arial, sans-serif;
+    }
+
+    .pedido-card {
+      border-radius: 14px;
+      padding: 18px;
+      background: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 15px;
+      cursor: pointer;
+      transition: transform 0.1s ease-in-out;
+    }
+
+    .pedido-card:hover {
+      transform: scale(1.01);
+    }
+
+    .pedido-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #d4c3ff;
+      color: #4b2eb3;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 12px;
+      font-size: 14px;
+    }
+
+    .estado {
+      font-weight: bold;
+    }
+
+
+ 
+ 
+ /* ---------- TIMELINE ---------- */
+        .timeline { display: flex; justify-content: space-between; align-items: center; margin: 25px 0; }
+        .timeline-line {
+            flex-grow: 1;
+            height: 4px;
+            background: #dcdcdc;
+            margin: 0 10px;
+            border-radius: 4px;
+        }
+        .timeline-step { text-align: center; width: 22%; }
+        .timeline-step .circle {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 8px;
+            background: #bbb;
+        }
+        .timeline-step.active .circle { background: #0d6efd; }
+        .timeline-step.completed .circle { background: #28a745; }
+
+        /* ---------- RATING ---------- */
+        .star-rating {
+            direction: rtl;
+            display: inline-flex;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        .star-rating input { display: none; }
+        .star-rating label {
+            color: #ccc;
+            padding: 0 3px;
+            transition: color 0.2s;
+        }
+        .star-rating input:checked ~ label {
+            color: gold;
+        }
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: gold;
+        }
+
+        /* Caja de pedido */
+        .pedido-item {
+            background: #faf6ff;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 12px;
+            border-left: 5px solid #a98cff;
+            cursor: pointer;
+        }
