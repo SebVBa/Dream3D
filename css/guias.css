@@ -1,0 +1,82 @@
+.topbar {
+    background-color: #c58a4a; /* marrón anaranjado */
+}
+
+/* Navbar links estilo botón */
+.navbar-nav .nav-link {
+    background-color: #fff; /* blanco */
+    color: blue; /* negro */
+    border-radius: 30px;
+    padding: 6px 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover navbar links */
+.navbar-nav .nav-link:hover {
+    background-color: #b27a3f; /* un poco más oscuro */
+    color: #fff;
+}
+
+/* Icono usuario */
+.nav-link > img {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    height: 45px;
+    width: 45px;
+}
+
+/* Contenido */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f6f0;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #e8a357;
+    font-weight: bold;
+}
+
+/* Acordeón */
+.accordion-button {
+    background-color: #f0dcc2;
+    color: #333;
+    font-weight: 600;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-body {
+    background-color: #fff;
+    color: #333;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Botón de la Sección Educativa */
+.btn-educativa {
+    background-color: blue; /* Verde */
+    color: #ffffff;            /* Texto blanco */
+    border: none;              /* Sin borde */
+    padding: 12px 25px;        /* Espaciado interno */
+    font-size: 18px;            /* Tamaño del texto */
+    border-radius: 8px;         /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición al pasar el mouse */
+}
+
+.btn-educativa:hover {
+    background-color: blue; /* Verde más oscuro al pasar el mouse */
+    color: #ffffff;             /* Mantener el texto blanco */
+    text-decoration: none;      /* Quitar subrayado si es un enlace */
+}

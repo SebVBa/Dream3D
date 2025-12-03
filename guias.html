@@ -1,63 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ayuda - Dream3D</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/guias.css">
 </head>
 <body>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
-
-<link rel="stylesheet" href="css/navbar.css">
-
-
-
-    <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg" style="background:#eda657; width:100%;">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg topbar">
   <div class="container-fluid">
-
-    <!-- LOGO -->
     <a class="navbar-brand" href="index.html">
-      <img src="img/logo.png" class="img-fluid rounded-4" style="height:75px;">
-
+      <img src="img/logo.png" class="img-fluid rounded-4" style="height:75px;" alt="Logo Dream3D">
     </a>
-
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
-
-        <!-- DROPDOWN -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="catalogoDropdown" role="button">
             Catálogo
           </a>
-
           <ul class="dropdown-menu text-center" aria-labelledby="catalogoDropdown">
             <li><a class="dropdown-item" href="personalizado.html">Personalizado</a></li>
             <li><a class="dropdown-item" href="catalogo.html">Catálogo</a></li>
           </ul>
         </li>
-
         <li class="nav-item">
           <a class="nav-link" href="#">Contáctanos</a>
         </li>
-
       </ul>
     </div>
-
-    <!-- ÍCONO USUARIO -->
     <a class="nav-link" href="#">
-      <img src="img/usuario.png" class="img-fluid rounded-4" style="height:45px;">
+      <img src="img/usuario.png" class="img-fluid rounded-4" style="height:45px;" alt="Usuario">
     </a>
-
   </div>
 </nav>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- CONTENIDO AYUDA -->
+<div class="container my-5">
+    <h1 class="text-center mb-4">Ayuda e Información</h1>
+
+    <div class="accordion" id="guiaAccordion">
+        <!-- Página de Inicio -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingInicio">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInicio" aria-expanded="true" aria-controls="collapseInicio">
+                    1. Página de Inicio
+                </button>
+            </h2>
+            <div id="collapseInicio" class="accordion-collapse collapse show" aria-labelledby="headingInicio" data-bs-parent="#guiaAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Encontrarás el nombre de nuestra empresa y a qué nos dedicamos.</li>
+                        <li>Se muestran imágenes de productos y servicios que ofrecemos.</li>
+                        <li>Se indican los descuentos vigentes y opiniones de clientes.</li>
+                        <li>Resumen sobre la empresa y cómo contactarnos.</li>
+                        <li>El icono de usuario permite crear cuenta o iniciar sesión.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Catálogo -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingCatalogo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCatalogo" aria-expanded="false" aria-controls="collapseCatalogo">
+                    2. Catálogo
+                </button>
+            </h2>
+            <div id="collapseCatalogo" class="accordion-collapse collapse" aria-labelledby="headingCatalogo" data-bs-parent="#guiaAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Catálogo Personalizado: interactúa con un artículo para personalizarlo antes de imprimirlo.</li>
+                        <li>Catálogo General: categorías predeterminadas de productos, opción “Otros” para personalización.</li>
+                        <li>Se pueden filtrar las categorías para mostrar solo la deseada.</li>
+                        <li>En ambos catálogos, al seleccionar un modelo, existe un botón para confirmar el pedido.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Información del Producto -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingInfoProducto">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfoProducto" aria-expanded="false" aria-controls="collapseInfoProducto">
+                    3. Información del Producto
+                </button>
+            </h2>
+            <div id="collapseInfoProducto" class="accordion-collapse collapse" aria-labelledby="headingInfoProducto" data-bs-parent="#guiaAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Detalles: tamaño, tipo de material, relleno, cantidad, tiempo de impresión y total a pagar.</li>
+                        <li>Una vez confirmado el pedido, se envía a impresión.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Métodos de Pago -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingPago">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePago" aria-expanded="false" aria-controls="collapsePago">
+                    4. Métodos de Pago
+                </button>
+            </h2>
+            <div id="collapsePago" class="accordion-collapse collapse" aria-labelledby="headingPago" data-bs-parent="#guiaAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Pagos por SINPE Móvil o Transferencias.</li>
+                        <li>Ingresar los datos necesarios y confirmar el pedido.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Estado de Pedidos -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEstado">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEstado" aria-expanded="false" aria-controls="collapseEstado">
+                    5. Estado de Pedidos
+                </button>
+            </h2>
+            <div id="collapseEstado" class="accordion-collapse collapse" aria-labelledby="headingEstado" data-bs-parent="#guiaAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Estados: En impresión, Cancelado, Finalizado.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Línea de Tiempo -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTimeline">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTimeline" aria-expanded="false" aria-controls="collapseTimeline">
+                    6. Línea de Tiempo del Pedido
+                </button>
+            </h2>
+            <div id="collapseTimeline" class="accordion-collapse collapse" aria-labelledby="headingTimeline" data-bs-parent="#guiaAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Estados de progreso: Aprobación pendiente, Confirmado, En impresión, Listo para entregar, Entregado.</li>
+                        <li>Una vez entregado, el cliente puede dejar un comentario y calificación.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Página de Comentarios -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingComentarios">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseComentarios" aria-expanded="false" aria-controls="collapseComentarios">
+                    7. Página de Comentarios
+                </button>
+            </h2>
+            <div id="collapseComentarios" class="accordion-collapse collapse" aria-labelledby="headingComentarios" data-bs-parent="#guiaAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Permite al cliente escribir su opinión sobre el artículo.</li>
+                        <li>Se puede enviar o cancelar el comentario.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Página de Ayuda / Guía -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingGuia">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGuia" aria-expanded="false" aria-controls="collapseGuia">
+                    8. Página de Ayuda / Guía
+                </button>
+            </h2>
+            <div id="collapseGuia" class="accordion-collapse collapse" aria-labelledby="headingGuia" data-bs-parent="#guiaAccordion">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Contiene esta guía completa del sitio web.</li>
+                        <li>Incluye tutoriales sobre cómo interactuar con el modelado 3D.</li>
+                        <li>Información educativa sobre qué es el 3D y cómo se aplica en nuestros productos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BOTÓN SECCIÓN EDUCATIVA -->
+  <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwii-_Xum6CRAxV-RDABHaIlHnYQFnoECCUQAQ&url=https%3A%2F%2Ftranslate.google.com%2Ftranslate%3Fu%3Dhttps%3A%2F%2Fwww.raise3d.com%2Facademy%2Fa-beginners-guide-to-3d-printing%2F%26hl%3Des%26sl%3Den%26tl%3Des%26client%3Dsrp&usg=AOvVaw3UkH_tpwDnSX0wBA8Y5UV3&opi=89978449" target="_blank" class="btn-educativa btn-lg">
+    Ir a la Sección Educativa
+  </a>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
